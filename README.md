@@ -1,64 +1,63 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+Acesso do heroku: http://desafioateliwareluanzanatta.herokuapp.com
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Após acessar o link, faça login no canto superior direito: 
+email = luan@gmail.com / senha = 12345678 ou faça o registro
 
-## About Laravel
+No menu favoritos no heroku já tem salvo o repositório do desafio e da aplicação(Para demonstração)
+Mais explicações sobre a aplicação em si estão disponíveis ao logar 
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Passo a Passo para subir o ambiente.
 
-## Learning Laravel
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+1 - Instalar o docker na maquina
+https://www.docker.com
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+2 - Instalar o laravel
+https://laravel.com/docs/9.x#getting-started-on-macos
 
-## Laravel Sponsors
+- curl -s "https://laravel.build/example-app" | bash
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+3 - Instalar o MySQL
 
-### Premium Partners
+- brew install mysql 
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+3 - Instalar um gerenciador para o banco(Opcional)
 
-## Contributing
+- instalei o DBeaver por já ter utilizado e ter facilidade na utilização, mas pode ser qualquer um, desde que tenha suporte para MySQL.
+No heroku está sendo utilizado o PostgreSQL
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- brew install dbeaver-community
 
-## Code of Conduct
+4 - Abrir o dbeaver e criar uma nova conexão(localhost) 
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+5 - Baixar os arquivos da aplicação que estão no Github 
 
-## Security Vulnerabilities
+6 - Abrir a pasta de criação da raiz laravel, "example-app" é o nome default
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+7 - Colocar todos os arquivos baixado dentro da pasta
 
-## License
+8 - Iniciar o docker
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+9 - Levantar a aplicação 
+
+- cd example-app
+ 
+- ./vendor/bin/sail up
+
+10 - Criar as tabelas do banco 
+
+- utilizando o vscode instale a extensão do docker
+
+- clique nela, já instalada, e acesse a opção CONTAINERS
+
+- Clique com o botão direito em "sail" e de depois em "Attach Shell
+
+- No terminal aberto digite "php artisan migrate"
+
+10 - Abra o navegador e digite http://localhost
+
+11 - No canto direito superior clique em login e faça login: email = luan@gmail.com / senha = 12345678 ou faça o registro
+
+FIM

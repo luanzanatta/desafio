@@ -18,10 +18,9 @@
                             com o objetivo de mostrar minhas habilidades para o desafio técnico da Ateliware.
                         </p>
                         <h5 class="card-title">Funcionamento</h5>
-                        <p class="card-text">Na página "Api GitHub, que pode ser acessada por meio do botão abaixo 
-                            ou no menu superior, podemos realizar a pesquisa por repositórios no github.
-                            A caixa de pesquisa do canto esquerdo possibilita procurar repositórios por meio do nome
-                            da linguagem na qual eles foram desenvolvidos e a caixa de pesquisa no canto direito, possibilita 
+                        <p class="card-text">Na página "Api GitHub, que pode ser acessada no menu superior, podemos realizar a pesquisa 
+                            por repositórios no github. A caixa de pesquisa do canto esquerdo possibilita procurar repositórios por 
+                            meio do nome a linguagem na qual eles foram desenvolvidos e a caixa de pesquisa no canto direito, possibilita 
                             pesquisar quais são os repositórios públicos de determinado usuário do github. Os dados apresentados
                             na busca por meio do nome da linguagem são apresentados em ordem decrescente de estrelas, já a pesquisa 
                             por nome de usuários, os resultados são no padrão default de pesquisa do github.<br/><br/>Em ambas as pesquisas 
@@ -31,14 +30,8 @@
                             o link que te redireciona direto para a página do repositório no github. A página de favs pode ser acessada por 
                             meio do menu superior ou adicionando um novo favorito a lista<br/><br/>A aplicação foi desenvolvida em Laravel
                             <br/>Utiliza o banco de dados MySQL<br/>Deploy realizado no Heroku<br/>Está disponível no Github<br/>Salva os 
-                            favoritos no BD<br/>Utiliza a API do Github<br/>É uma aplicação nova<br/>Está Dockernizada<br/>Linguagem PHP
+                            favoritos no BD<br/>Utiliza a API do Github<br/>É uma aplicação nova<br/>Linguagem PHP & JS<br/>Está Dockernizada
                         </p>
-                        <p class="card-text">Ao clicar em "Acessar" você será redirecionado para a área de pesquisa da aplicação</p>
-                        <form>
-                            <a href="http://localhost/apis">
-                            <input type="button" class="btn btn-success" value="Acessar">
-                            </a>
-                        </form>
                     </div>
                     <div class="card-footer text-muted">
                     </div>

@@ -50,7 +50,7 @@ No heroku está sendo utilizado o PostgreSQL
 
 - utilizando o vscode instale a extensão do docker
 
-- clique nela, já instalada, e acesse a opção CONTAINERS
+- clique nela, já instalada, e acesse a opção CONTAINERS / example-pp
 
 - Clique com o botão direito em "sail" e de depois em "Attach Shell
 
